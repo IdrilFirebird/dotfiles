@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc gitconfig gitignore_global irbrc irbrc_rails oh-my-zsh costume-oh-my-zsh ruby-version zshrc"    # list of files/folders to symlink in homedir
+files="bashrc gitconfig gitignore_global irbrc irbrc_rails oh-my-zsh costum-oh-my-zsh ruby-version zshrc"    # list of files/folders to symlink in homedir
 
 ##########
 
