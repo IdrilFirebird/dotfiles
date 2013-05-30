@@ -39,6 +39,8 @@ elif [[ $platform == 'Darwin' ]]; then
 	plugins+=(osx)
 fi
 
+$ZSH_CUSTOM = ~/dotfiles/costum-oh-my-zsh/
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
