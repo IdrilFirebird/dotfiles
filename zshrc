@@ -32,17 +32,20 @@ ZSH_THEME="rbates"
 plugins=(git bundler brew gem postgres)
 
 # Costum Plugin load
+platform=$(uname);
 if [ -f /etc/debian_version ]; then
 	plugins+=(debian)
+elif [[ $platform == 'Darwin' ]]; then
+	plugins+=(osx)
 fi
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 #export PATH="bin:$PATH"
-export PATH=$PATH:/usr/local/share/python
-PATH="$HOME/.rbenv/bin:$PATH"
-export EDITOR='subl -w'
+PATH=$HOME/.rbenv/bin:$PATH:/usr/local/share/python
+
+EDITOR='subl -w'
 
 eval "$(rbenv init -)"
 
