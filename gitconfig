@@ -1,0 +1,69 @@
+# User information. Replace with your own data, obviously.
+#
+[user]
+	name = Sebastian Prokesch
+	email = sebastian.prokesch@gmail.com
+	
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	keepBackup = true
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+# Automatically track branches with the same name
+#
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always
+
+# Push the current branch as the default behaviour
+#
+[push]
+  default = current
+
+# Include a summary of changes in merge commit messages.
+#
+[merge]
+  summary = true
+
+# Color configuration.
+#
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+# Whitespace handliong
+#
+[core]
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = /Users/Sebastian/.gitignore_global
+  editor = subl
+
+# Useful aliases
+#
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  dc = diff --cached
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
