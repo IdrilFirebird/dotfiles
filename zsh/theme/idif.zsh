@@ -8,7 +8,6 @@ setopt prompt_subst
 autoload -U promptinit
 promptinit
 
-
 # Look at http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Version-Control-Information
 # for mor options
 zstyle ':vcs_info:*' check-for-changes true
