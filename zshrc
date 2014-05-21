@@ -1,53 +1,22 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+export ZSH=~/dotfiles/zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="idif"
+# Load all of the config files in ~/.zsh that end in .zsh
+for config_file ($ZSH/lib/*.zsh) source $config_file
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Load and run compinit
+autoload -U compinit
+compinit -i
 
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler brew gem postgres)
-
-# Costum Plugin load
-platform=$(uname);
-if [ -f /etc/debian_version ]; then
-	plugins+=(debian)
-elif [[ $platform == 'Darwin' ]]; then
-	plugins+=(osx)
-fi
-
-ZSH_CUSTOM=$HOME/dotfiles/custom-oh-my-zsh
-
-source $ZSH/oh-my-zsh.sh
+source $ZSH/theme/*.zsh
 
 # Customize to your needs...
 #export PATH="bin:$PATH"
-PATH=$HOME/.rbenv/bin:$PATH:/usr/local/share/python
+PATH=$HOME/.rbenv/bin:$HOME/bin:$PATH
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
 
 EDITOR='subl -w'
 
 eval "$(rbenv init -)"
 
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_05`
