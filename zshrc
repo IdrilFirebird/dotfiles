@@ -19,4 +19,6 @@ EDITOR='subl -w'
 
 eval "$(rbenv init -)"
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_05`
+if [ -f /usr/libexec/java_home ]; then
+    export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_05`
+fi
