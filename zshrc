@@ -23,5 +23,10 @@ EDITOR='subl -w'
 eval "$(rbenv init -)"
 
 if [ -f /usr/libexec/java_home ]; then
-    export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_05`
+    export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_11`
 fi
+
+export GLASSFISH_HOME=/usr/local/opt/glassfish/libexec
+export PATH=${PATH}:${GLASSFISH_HOME}/bin
+#export JRUBY_HOME="/home/user/.rbenv/versions/jruby-1.7.12"
+
