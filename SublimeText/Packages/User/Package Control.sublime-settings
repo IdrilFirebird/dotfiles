@@ -1,0 +1,25 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BetterFindBuffer",
+		"Crypto",
+		"DashDoc",
+		"Emmet",
+		"FileDiffs",
+		"Git",
+		"knockdown",
+		"Markdown Preview",
+		"MinimalFortran",
+		"Package Control",
+		"rsub",
+		"Sass",
+		"Seti_UI",
+		"StyleSorter",
+		"SublimeCodeIntel",
+		"Theme - Cobalt2",
+		"Theme - Flatland"
+	]
+}
