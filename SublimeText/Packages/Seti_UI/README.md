@@ -51,8 +51,11 @@ Activate the `Theme` and `Color-Scheme` by modifying your user preferences file,
 ```
 {
   "Seti_no_bar_undertabs": true,          // remove the 4px bar under the tabs
-  "Seti_no_blue_bar": true,          	  // remove the blue bar under the un-saved tabs
+  "Seti_no_blue_bar": true,               // remove the blue bar under the un-saved tabs
   "Seti_blue_tab_label": true,            // change the un-saved tab label to blue
+  "Seti_orange_label": true,		      // change label color to orange
+  "Seti_orange_button": true,			  // change blue tab buttons to orange
+
   "Seti_tabs_small": true,                // tabs height = 35
   "Seti_tabs_med": true,                  // tabs height = 40
 
@@ -69,9 +72,11 @@ Activate the `Theme` and `Color-Scheme` by modifying your user preferences file,
 
   "Seti_sb_tree_med": true,               // sidebar tree padding = 15
   "Seti_sb_tree_small": true,             // sidebar tree padding = 10
-
   "Seti_sb_tree_tiny": true,              // check (issues/88)
   "Seti_sb_tree_miny": true,              // check (issues/88)
+
+  "Seti_sb_no_icons": true,               // check (issues/133)
+  "Seti_sb_blank": true,                  // check (issues/133)
 
   "Seti_pad_5": true,                     // use with line_padding_bottom / line_padding_top = 5
   "Seti_pad_3": true,                     // use with line_padding_bottom / line_padding_top = 3
@@ -102,13 +107,7 @@ Activate the `Theme` and `Color-Scheme` by modifying your user preferences file,
 
 - No file icon in the opened tabs, ST lacks this.
 
-- <strike>Not as icon rich as the original because ST can't see anything other than Extensions ,and even thou its still hard to make it use the icon you want</strike>. ( A work around has been added on v7 )
-
-- Some scopes have different colors in Atom like the `:` ,this is related to the tmLanguage file in ST ,also note that Atom sometimes will display a different color than ST "even if the scope name matches in both editors".
-
 - Current line number highlight color, ST lacks this.
-
-- Everything else is basically the same as the original except for a couple of UI colors.
 
 ## Issue A Ticket
 
