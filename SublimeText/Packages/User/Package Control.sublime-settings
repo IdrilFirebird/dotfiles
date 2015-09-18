@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -18,6 +19,7 @@
 		"Sass",
 		"Seti_UI",
 		"StyleSorter",
-		"SublimeCodeIntel"
+		"SublimeCodeIntel",
+		"Theme - El Capitan"
 	]
 }
