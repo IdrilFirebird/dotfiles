@@ -7,6 +7,9 @@
 	"caret_extra_top": 3,
 	"caret_extra_width": 2,
 	"color_scheme": "Packages/Seti_UI/Scheme/Seti.tmTheme",
+	// "color_scheme": "Packages/User/Xcode-ish.tmTheme",
+	// "color_scheme": "Packages/User/Smyck.tmTheme",
+	"font_face": "Hack",
 	"font_size": 10.0,
 	"highlight_line": true,
 	"ignored_packages":
@@ -20,6 +23,7 @@
 	],
 	"overlay_scroll_bars": "enabled",
 	"theme": "Seti.sublime-theme",
+	// "theme": "El Capitan.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"word_wrap": true,
 	"wrap_width": 80
