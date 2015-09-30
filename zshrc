@@ -18,7 +18,7 @@ source $ZSH/theme/*.zsh
 # Customize to your needs...
 #export PATH="bin:$PATH"
 PATH=$HOME/.rbenv/bin:$HOME/bin:$PATH
-PATH=/usr/local/sbin:$PATH
+PATH=/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin:$PATH
 
 
 EDITOR='subl -w'

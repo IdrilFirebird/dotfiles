@@ -1,1 +1,1 @@
-{"description": "Adds a couple of missing features to SublimeText 3 Find Results buffer", "url": "https://github.com/aziz/BetterFindBuffer", "version": "0.1.5"}
+{"version": "0.1.6", "dependencies": [], "platforms": ["*"], "url": "https://github.com/aziz/BetterFindBuffer", "sublime_text": ">=3000", "description": "Adds a couple of missing features to SublimeText 3 Find Results buffer"}
