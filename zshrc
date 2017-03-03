@@ -13,7 +13,7 @@ fpath=($ZSH/completions $fpath)
 autoload -U compinit
 compinit -i
 
-source $ZSH/theme/*.zsh
+source $ZSH/theme/idif.zsh
 
 # Customize to your needs...
 #export PATH="bin:$PATH"
