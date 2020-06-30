@@ -1,9 +1,9 @@
 # User information. Replace with your own data, obviously.
 #
 [user]
-	name = Sebastian Prokesch
+	name = Sebastian
 	email = sebastian.prokesch@gmail.com
-	
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -27,6 +27,7 @@
 #
 [merge]
   summary = true
+	conflictstyle = diff3
 
 # Color configuration.
 #
@@ -51,8 +52,8 @@
 #
 [core]
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-  excludesfile = /Users/Sebastian/.gitignore_global
-	editor = subl -w
+	excludesfile = /Users/sebastian/.gitignore_global
+	editor = code -w
 	autocrlf = input
 
 # Useful aliases
@@ -68,3 +69,13 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
+[commit]
+	template = /Users/sebastian/.stCommitMsg
+
+[apply]
+    whitespace = nowarn

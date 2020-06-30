@@ -14,16 +14,16 @@ autoload -U compinit
 compinit -i
 
 source $ZSH/theme/idif.zsh
-
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 # Customize to your needs...
 #export PATH="bin:$PATH"
-PATH=$HOME/.rbenv/bin:$HOME/bin:$PATH
-PATH=/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin:$PATH
 
-
-EDITOR='subl -w'
+EDITOR='code -w'
 
 eval "$(rbenv init -)"
+
+eval "$(jenv init -)"
 
 if [ -f /usr/libexec/java_home ]; then
 #    export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_11`
